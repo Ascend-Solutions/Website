@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+
+    # Deployment Folder
+    - export DEPLOYPATH=/home/Website/public_html/
+
+    # Files
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp services.html $DEPLOYPATH
+    - /bin/cp solutions.html $DEPLOYPATH
+
+    # Folders
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R forms $DEPLOYPATH
